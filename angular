@@ -1,0 +1,41 @@
+Angular
+
+Modularity
+Isolation
+Component structure
+React is a library and angular is a ramework
+Rest Template is used to interact btw 2 java program using rest.
+Angular follows component/Modules based architecture.
+Modules comprises of components(will does only one task)
+In angular we have HTML+CSS+JS together as a componenet and multiple component is module.
+
+ng new projectName
+ng serve
+ng g c test  // g for generate and c for component
+lsof -i:8080  //To see the PID of the port
+kill -9 $(lsof -t -i:4201) //
+
+                                                               SELECTOR
+
+We can also use selector as a class by using .app-test   in .ts file
+And where you want to call the component use <div class="app-test">
+We can also use in square bracket and directly use selector name in div tag
+
+HOW TO USE INLINE TEMPLATES
+just use template and style instead of templateURL and styleURL
+Use backticks(`) instead of single qoutes
+
+                                                              INTERPOLATION
+We can bind data from class to template..
+
+ template: `<div>   
+             Welcome {{name}} to inline HTML
+             
+             </div>`,
+  styleUrls: ['./binding-component.component.css']
+})
+export class BindingComponentComponent implements OnInit {
+  
+  public name ="AbhishekSingh";
+
+
